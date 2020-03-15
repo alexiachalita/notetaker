@@ -36,7 +36,7 @@ var deleteNote = function(id) {
 var renderActiveNote = function() {
   $saveNoteBtn.hide();
   console.log(activeNote);
-  if (activeNote.id) {
+  if (activeNote.id!==undefined) {
     $noteTitle.attr("readonly", true);
     $noteText.attr("readonly", true);
     $noteTitle.val(activeNote.title);
