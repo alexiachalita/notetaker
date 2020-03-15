@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 })); 
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(express.static('assets'));
 
